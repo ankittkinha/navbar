@@ -49,8 +49,4 @@ window.addEventListener("click", function () {
     document.querySelector(".btnDesign3").style.display = "none";
 })
 
-// document.querySelector(".btnDesign1").addEventListener("click", function(){
-//     console.log("button1 clicked")
-// })
-
 
