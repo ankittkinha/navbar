@@ -2,8 +2,36 @@ const heading1 = document.querySelector(".topic1");
 const heading2 = document.querySelector(".topic2");
 const heading3 = document.querySelector(".topic3");
 
+// const handleClick = (dropdown, btnDesign) => {
+//     const drops = ["dropdown1", "dropdown2", "dropdown3"]
+//     const btns = ["btnDesign1", "btnDesign2", "btnDesign3"]
+//     // console.log("Entered function")
+//     for (let i = 0; i < drops.length; i++){
+//         // console.log("Entered loop")
+//         if (drops[i] === dropdown){
+//             // console.log("Entered drop if")
+//             if(drops[i] === "dropdown1"){
+//                 document.querySelector(`.${dropdown}`).style.display = "flex";
+//                 document.querySelector(`.dropdown1`).style.display = "flex";
+//             }
+//             document.querySelector(`.${dropdown}`).style.display = "block";
+//         } else {
+//             document.querySelector(`.${dropdown}`).setAttribute("style", "display: none !important");
+//         }
+
+//         if (btns[i] === btnDesign){
+//             // console.log("Entered btn if")
+//             document.querySelector(`.${btnDesign}`).style.display = "block";
+//         } else {
+//             document.querySelector(`.${btnDesign}`).setAttribute("style", "display: none !important");
+//         }
+//     }
+// }
+
 heading1.addEventListener("click", function (e) {
     e.stopPropagation();
+
+    // handleClick("dropdown1", "btnDesign1")
 
     document.querySelector(".dropdown1").style.display = "flex";
     document.querySelector(".dropdown2").setAttribute("style", "display: none !important");
